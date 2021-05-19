@@ -6,7 +6,7 @@ const router = require('express').Router();
 //use such routes
 
 router.use((req, res) => {
-  res.send("<h1>Wrong Route!</h1>")
+  res.send("<h1>You have taken Wrong Route!</h1>")
 });
 
 module.exports = router;
