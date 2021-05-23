@@ -3,11 +3,13 @@ const {Post} = require('../models');
 const postData = [
     {
         title: "the opinions of a real human being",
-        user_id : 1
+        postUrl:'https://imgur.com/gallery/tW8SY',
+        userId : 1,
     },
     {
         title: "the feelings of robots ",
-        user_id: 2
+        userId: 2,
+        postUrl:'https://imgur.com/gallery/YUJYQ',
     }
 ];
 

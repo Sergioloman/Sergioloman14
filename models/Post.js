@@ -15,17 +15,14 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    user_id: {
+    userId: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id'
-      }
+
     },
-    post_url:{
-      type:DataTypes.STRING,
+    postUrl: {
+      type: DataTypes.STRING,
       allowNull:false,
-      validate:{ isUrl: true}
+      validate:{ isURL: true}
     }
   },
   {
