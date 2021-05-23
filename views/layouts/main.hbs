@@ -8,15 +8,27 @@
 
 </head>
 <body>
-    <h1>Tech Blog</h1>
+    <h1>A Tech Blog</h1>
     <nav>
         <ul>
+        {{#if loggedIn}}
             <li>
-                <a href="">dashboard</a>
-            </li>  
+                <a href="">FrontPage</a>
+            </li> 
+            <li>
+                <a href="">Dashboard</a>
+            </li>
+            <li>
+                <a href="">Log out!</a>
+            </li>
+        {{else}}  
+            <li>
+                <a href="">FrontPage</a>
+            </li> 
             <li>
                 <a href="">Log in</a>
             </li>
+        {{/if}}
         </ul>
     </nav>
 

@@ -7,7 +7,7 @@ class User extends Model {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
-//model is a sequelize model inside the npm package
+
 User.init(
   {
     id: {
@@ -16,7 +16,6 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -29,7 +28,6 @@ User.init(
   },
   {
     hooks: {
-
       async beforeCreate(newUserData) {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;

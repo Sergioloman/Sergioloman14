@@ -10,7 +10,18 @@ const commentData = [
       text:"I would have said it diferently",
       postId:2,
       userId:1,
-  }]
+  },
+  {
+    text: "yes its true",
+    postId:3,
+    userId:4
+  },
+  { 
+    text: "Indeed.........",
+    postId:4,
+    userId:3,
+  }
+]
 
 const commentSeeds = () => Comment.bulkCreate(commentData);
 

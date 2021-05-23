@@ -17,6 +17,10 @@ Post.init(
     },
     userId: {
       type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key:"id",
+      }
 
     },
     postUrl: {

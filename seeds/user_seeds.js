@@ -3,13 +3,22 @@ const { User } = require('../models');
 
 const  userData = [
     {
-        username: 'sergio',
-        password: "pass9999"
+        username: 'Sergioloman',
+        password: "pass1111"
     },
     {
-        username: 'oigres',
-        password: "pass6666"
+        username: 'Destroyer99',
+        password: "pass2222"
+    },
+    {
+        username: 'RexCommander',
+        password: "pass3333"
+    },
+    {
+        username: 'OmegaDeer',
+        password: "pass4444"
     }
+
 ]
 
 const userSeeds = () => User.bulkCreate(userData,{individualHooks: true});
