@@ -1,9 +1,7 @@
+<h1>All Posts</h1>
+{{#each posts}}
 <div>
-    {{#each posts}}
-    <div>
-        <h3>{{title}}</h3>
-        <p>by {{User.username}}</p>
-        <br>
-     
-    {{/each}}
-  </div>
+    <h3>{{title}}</h3>
+    <p>by {{User.username}}</p>
+</div>
+{{/each}}
